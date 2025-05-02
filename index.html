@@ -2,55 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Uiverse Glass Card</title>
   <style>
-    /* Paste Uiverse CSS here */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    /* From Uiverse.io by kamehame-ha */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
     * {
       box-sizing: border-box;
     }
 
     body {
+      background: #151320;
       margin: 0;
-      display: grid;
-      place-items: center;
+      padding: 0;
       height: 100vh;
-      background: #0f172a;
-      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
     }
 
     .card {
-      width: 220px;
-      height: 321px;
+      width: 300px;
+      height: 400px;
       background: rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
     }
 
     .card h2 {
-      margin-top: 0;
-      margin-bottom: 10px;
+      font-size: 1.8em;
+      margin: 0 0 15px 0;
     }
 
     .card p {
-      font-size: 14px;
+      font-size: 1em;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2>Drone Pilot</h2>
-    <p>DGCA Certified | Apply Now</p>
+    <h2>Join Drone Pilot Training</h2>
+    <p>DGCA Certified | Apply Now<br>₹35,000 Only</p>
   </div>
 </body>
 </html>
